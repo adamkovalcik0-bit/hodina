@@ -2,9 +2,6 @@ import pandas as pd
 
 df = pd.read_csv("big4_financial_risk_compliance.csv")
 
-print(df.head(0))
-print(df.shape)
-print(df.dtypes)
 
 #Deskriptívna štatistika
 print(df.groupby("Year")["Total_Audit_Engagements"].mean())
